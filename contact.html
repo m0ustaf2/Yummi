@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummi</title>
+    <link rel="icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="loading">
+        <i class="fa fa-spinner fa-spin fa-5x  text-white"></i>
+    </div>
+    <!-- -------side-nav-bar------------ -->
+    <div class="side-nav">
+        <div class="nav-left">
+            <ul class="list-unstyled nav-content  ">
+                <li class="ps-4 pt-4  "><a class="text-decoration-none text-white" href="search.html">Search</a></li>
+                <li class="ps-4 pt-4 "><a class="text-decoration-none text-white" href="category.html">Categories</a></li>
+                <li class="ps-4 pt-4 "><a class="text-decoration-none text-white" href="arae.html">Area</a></li>
+                <li class="ps-4 pt-4 "><a class="text-decoration-none text-white" href="ingredients.html">Ingredients</a>
+                </li>
+                <li class="ps-4  pt-4"><a class="text-decoration-none text-white" href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-social-item container">
+                <a><i class="fab fa-facebook-f ms-4"></i></a>
+                <a><i class="fab fa-twitter px-2"></i></a>
+                <a><i class="fas fa-globe"></i></a>
+                <div class="pt-3">
+                    <span>Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="nav-right">
+            <img width="40" src="images/logo.png" alt="logo">
+            <i class="fa-solid fa-bars show hide"></i>
+            <i class="fa-solid fa-xmark show close"></i>
+            <div class="nav-right-bottom">
+                <div>
+                    <i class="fas fa-globe"></i>
+                </div>
+
+                <div>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------End-side-nav-bar------- -->
+    <section id="contact" class="py-5">
+        <div class="container w-75 py-5 ">
+            <h2 class="text-light mb-5 text-center">ContacUs...</h2>
+            <div class="row contact-inputs gap-0 py-5">
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="form-group ">
+                            <input id="nameInput" type="text" placeholder="Enter Your Name" class=" form-control shadow  text-light bg-transparent w-100  rounded-1 my-2">
+                            <div id="nameAlert" class="alert mt-1 alert-danger d-none">Special Characters and Numbers not allowed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="form-group">
+                            <input id="emailInput" type="email" placeholder="Enter  Email" class=" form-control shadow  text-light bg-transparent w-100  rounded-1 my-2">
+                            <div id="emailAlert" class="alert mt-1 alert-danger d-none">Enter valid email. *Ex: xxx@yyy.zzz</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="form-group">
+                            <input id="phoneInput" type="number" placeholder="Enter phone" class=" form-control shadow  text-light bg-transparent w-100  rounded-1 my-2">
+                            <div id="phoneAlert" class="alert mt-1 alert-danger d-none">Enter valid Phone Number</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="form-group">
+                            <input id="ageInput" type="number" placeholder="Enter Age" class=" form-control shadow  text-light bg-transparent w-100 rounded-1 my-2">
+                            <div id="ageAlert" class="alert mt-1 alert-danger d-none">Enter valid Age</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="form-group">
+                            <input id="passInput" type="password" placeholder="Enter password" class=" form-control shadow  text-light bg-transparent w-100 rounded-1 my-2">
+                            <div id="passAlert" class="alert mt-1 alert-danger d-none">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="form-group">
+                            <input id="repassInput" type="password" placeholder="Enter RePassword" class=" form-control shadow  text-light bg-transparent w-100 rounded-1 my-2">
+                            <div id="repassAlert" class="alert mt-1 alert-danger d-none">Enter valid Repassword</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button id="submit" type="submit" class="btn btn-outline-danger" disabled >Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

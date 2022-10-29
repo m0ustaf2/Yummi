@@ -1,0 +1,178 @@
+body{
+    overflow: hidden;
+    background-color: black;
+}
+#loading{
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* /////side-navbar/////// */
+.side-nav{
+    position: fixed;
+    height: 100vh;
+    left:0px;
+    z-index: 9999;
+}
+.nav-left
+{
+    background-color: black;
+    width: 255px;
+    height:100vh;
+    position: absolute;
+}
+.nav-left .nav-social-item
+{
+    position: absolute;
+    top: 80%;
+}
+.nav-left .nav-social-item span{
+    color: #999;
+}
+.nav-right
+{
+    background-color: #F8F6F6;
+    position: relative;
+    left:250px;
+    width: 50px;
+    height: 100vh;
+}
+.nav-right img{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+.nav-right i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav-right .nav-right-bottom
+{
+    position: relative;
+    top: 80%;
+    left:10%
+}
+.nav-right .nav-right-bottom .fa-globe
+{
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+}
+.nav-right .nav-right-bottom .fa-share-alt
+{
+    font-size: 20px;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+.nav-content{
+    display: none;
+}
+.close{
+    display: none;
+}
+/* //////End-side-navbar//////// */
+/************************Meal-Layer********************/
+.mealLayer
+{
+    top: 150%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.687);
+    transition: 0.9s;
+}
+.imgs:hover .mealLayer
+{
+    top: 0%;
+}
+.imgs
+{
+    cursor: pointer;
+    overflow: hidden;
+}
+/************************End-Meal-Layer****************/
+/* ---------contact------------ */
+.form-group input {
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;
+    
+}
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+}
+.input input::placeholder{
+    text-align: center;
+}
+/* ************end-contact********* */
+/* ***********arae css ****************/
+.area-icon{
+    box-shadow: 2px 2px 20px  black;
+    color: #9E403A;
+    cursor: pointer;
+}
+/* **********end-area ****************/
+/* ***********ingredients*********** */
+.innerIngredients{
+    overflow: hidden;
+    box-shadow: 2px 2px 20px  black;
+    cursor: pointer;
+    height: 230px;
+}
+.innerIngredients p{
+    height: 45px;
+}
+/* ***********End-ingredients*********** */
+
+/* *********************search********************* */
+.caption-search{
+    padding-top: 50px;
+}
+.caption-search input{
+    background: transparent;
+    border-right: none; 
+    border-bottom: 1px solid white;
+}
+.caption-search input::placeholder{
+    text-align: center;
+}
+.caption-search .images{
+    height: 250px !important;
+    border-radius: 5px;
+    position: relative;
+}
+.caption-search .images img{
+    border-radius: 5px;
+}
+.caption-search .images .shadow-photo{
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255 , 0.7);
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    transition: 0.8s;
+    opacity: 0;
+    overflow: hidden;
+}
+.caption-search .images:hover .shadow-photo{
+    opacity: 1;
+    top: 0;
+    cursor: pointer;
+}
+/* ****************************End-Search********************* */
